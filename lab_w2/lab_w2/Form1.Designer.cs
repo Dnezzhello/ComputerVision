@@ -44,7 +44,7 @@
             this.btnGrayScale1 = new System.Windows.Forms.Button();
             this.txtBoxThreshold = new System.Windows.Forms.TextBox();
             this.txtBoxCoef = new System.Windows.Forms.TextBox();
-            this.txtBoxAlpha = new System.Windows.Forms.TextBox();
+            this.txtBoxGamma = new System.Windows.Forms.TextBox();
             this.btnInvert = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,10 +53,10 @@
             // 
             this.btnOrigin.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrigin.ForeColor = System.Drawing.Color.Navy;
-            this.btnOrigin.Location = new System.Drawing.Point(81, 45);
-            this.btnOrigin.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnOrigin.Location = new System.Drawing.Point(72, 36);
+            this.btnOrigin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOrigin.Name = "btnOrigin";
-            this.btnOrigin.Size = new System.Drawing.Size(206, 66);
+            this.btnOrigin.Size = new System.Drawing.Size(183, 53);
             this.btnOrigin.TabIndex = 0;
             this.btnOrigin.Text = "Origin";
             this.btnOrigin.UseVisualStyleBackColor = true;
@@ -66,10 +66,10 @@
             // 
             this.button3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Navy;
-            this.button3.Location = new System.Drawing.Point(550, 45);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.button3.Location = new System.Drawing.Point(489, 36);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(236, 66);
+            this.button3.Size = new System.Drawing.Size(210, 53);
             this.button3.TabIndex = 2;
             this.button3.Text = "Gray Scale 2";
             this.button3.UseVisualStyleBackColor = true;
@@ -79,10 +79,10 @@
             // 
             this.btnBlackWhite.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBlackWhite.ForeColor = System.Drawing.Color.Navy;
-            this.btnBlackWhite.Location = new System.Drawing.Point(810, 132);
-            this.btnBlackWhite.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnBlackWhite.Location = new System.Drawing.Point(720, 106);
+            this.btnBlackWhite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBlackWhite.Name = "btnBlackWhite";
-            this.btnBlackWhite.Size = new System.Drawing.Size(232, 66);
+            this.btnBlackWhite.Size = new System.Drawing.Size(206, 53);
             this.btnBlackWhite.TabIndex = 4;
             this.btnBlackWhite.Text = "Black_White 1";
             this.btnBlackWhite.UseVisualStyleBackColor = true;
@@ -92,10 +92,10 @@
             // 
             this.btnNegative.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNegative.ForeColor = System.Drawing.Color.Navy;
-            this.btnNegative.Location = new System.Drawing.Point(810, 305);
-            this.btnNegative.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnNegative.Location = new System.Drawing.Point(720, 244);
+            this.btnNegative.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNegative.Name = "btnNegative";
-            this.btnNegative.Size = new System.Drawing.Size(232, 66);
+            this.btnNegative.Size = new System.Drawing.Size(206, 53);
             this.btnNegative.TabIndex = 5;
             this.btnNegative.Text = "Negative";
             this.btnNegative.UseVisualStyleBackColor = true;
@@ -105,10 +105,10 @@
             // 
             this.btnLogTransform.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogTransform.ForeColor = System.Drawing.Color.Navy;
-            this.btnLogTransform.Location = new System.Drawing.Point(807, 502);
-            this.btnLogTransform.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnLogTransform.Location = new System.Drawing.Point(717, 402);
+            this.btnLogTransform.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogTransform.Name = "btnLogTransform";
-            this.btnLogTransform.Size = new System.Drawing.Size(236, 66);
+            this.btnLogTransform.Size = new System.Drawing.Size(210, 53);
             this.btnLogTransform.TabIndex = 7;
             this.btnLogTransform.Text = "Log Transformation";
             this.btnLogTransform.UseVisualStyleBackColor = true;
@@ -118,10 +118,10 @@
             // 
             this.btnPowerLaw.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPowerLaw.ForeColor = System.Drawing.Color.Navy;
-            this.btnPowerLaw.Location = new System.Drawing.Point(814, 609);
-            this.btnPowerLaw.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnPowerLaw.Location = new System.Drawing.Point(724, 487);
+            this.btnPowerLaw.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPowerLaw.Name = "btnPowerLaw";
-            this.btnPowerLaw.Size = new System.Drawing.Size(226, 66);
+            this.btnPowerLaw.Size = new System.Drawing.Size(201, 53);
             this.btnPowerLaw.TabIndex = 8;
             this.btnPowerLaw.Text = "Power Law";
             this.btnPowerLaw.UseVisualStyleBackColor = true;
@@ -131,10 +131,10 @@
             // 
             this.button10.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Navy;
-            this.button10.Location = new System.Drawing.Point(428, 811);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.button10.Location = new System.Drawing.Point(380, 649);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(358, 66);
+            this.button10.Size = new System.Drawing.Size(318, 53);
             this.button10.TabIndex = 9;
             this.button10.Text = "Median Filter";
             this.button10.UseVisualStyleBackColor = true;
@@ -143,10 +143,10 @@
             // 
             this.button11.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Navy;
-            this.button11.Location = new System.Drawing.Point(81, 811);
-            this.button11.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.button11.Location = new System.Drawing.Point(72, 649);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(327, 66);
+            this.button11.Size = new System.Drawing.Size(291, 53);
             this.button11.TabIndex = 10;
             this.button11.Text = "Mean Filter";
             this.button11.UseVisualStyleBackColor = true;
@@ -154,10 +154,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(81, 132);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 106);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(704, 672);
+            this.pictureBox1.Size = new System.Drawing.Size(626, 538);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -166,9 +166,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(810, 231);
+            this.label2.Location = new System.Drawing.Point(720, 185);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 29);
+            this.label2.Size = new System.Drawing.Size(114, 24);
             this.label2.TabIndex = 14;
             this.label2.Text = "Threshold = ";
             // 
@@ -176,9 +176,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(810, 705);
+            this.label3.Location = new System.Drawing.Point(720, 564);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 29);
+            this.label3.Size = new System.Drawing.Size(41, 24);
             this.label3.TabIndex = 16;
             this.label3.Text = "C = ";
             // 
@@ -186,20 +186,20 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(810, 774);
+            this.label4.Location = new System.Drawing.Point(720, 619);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 29);
+            this.label4.Size = new System.Drawing.Size(95, 24);
             this.label4.TabIndex = 18;
-            this.label4.Text = "Alpha = ";
+            this.label4.Text = "Gamma = ";
             // 
             // btnOpenPic
             // 
             this.btnOpenPic.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenPic.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnOpenPic.Location = new System.Drawing.Point(814, 45);
-            this.btnOpenPic.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnOpenPic.Location = new System.Drawing.Point(724, 36);
+            this.btnOpenPic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenPic.Name = "btnOpenPic";
-            this.btnOpenPic.Size = new System.Drawing.Size(226, 66);
+            this.btnOpenPic.Size = new System.Drawing.Size(201, 53);
             this.btnOpenPic.TabIndex = 19;
             this.btnOpenPic.Text = "Open Picture";
             this.btnOpenPic.UseVisualStyleBackColor = true;
@@ -209,10 +209,10 @@
             // 
             this.btnGrayScale1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrayScale1.ForeColor = System.Drawing.Color.Navy;
-            this.btnGrayScale1.Location = new System.Drawing.Point(308, 45);
-            this.btnGrayScale1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnGrayScale1.Location = new System.Drawing.Point(274, 36);
+            this.btnGrayScale1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGrayScale1.Name = "btnGrayScale1";
-            this.btnGrayScale1.Size = new System.Drawing.Size(220, 66);
+            this.btnGrayScale1.Size = new System.Drawing.Size(196, 53);
             this.btnGrayScale1.TabIndex = 21;
             this.btnGrayScale1.Text = "Gray Scale 1";
             this.btnGrayScale1.UseVisualStyleBackColor = true;
@@ -221,38 +221,41 @@
             // txtBoxThreshold
             // 
             this.txtBoxThreshold.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxThreshold.Location = new System.Drawing.Point(940, 231);
+            this.txtBoxThreshold.Location = new System.Drawing.Point(836, 185);
+            this.txtBoxThreshold.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxThreshold.Name = "txtBoxThreshold";
-            this.txtBoxThreshold.Size = new System.Drawing.Size(100, 30);
+            this.txtBoxThreshold.Size = new System.Drawing.Size(89, 26);
             this.txtBoxThreshold.TabIndex = 22;
             this.txtBoxThreshold.Text = "0";
             // 
             // txtBoxCoef
             // 
             this.txtBoxCoef.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxCoef.Location = new System.Drawing.Point(864, 705);
+            this.txtBoxCoef.Location = new System.Drawing.Point(768, 564);
+            this.txtBoxCoef.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxCoef.Name = "txtBoxCoef";
-            this.txtBoxCoef.Size = new System.Drawing.Size(178, 30);
+            this.txtBoxCoef.Size = new System.Drawing.Size(159, 26);
             this.txtBoxCoef.TabIndex = 23;
             this.txtBoxCoef.Text = "0";
             // 
-            // txtBoxAlpha
+            // txtBoxGamma
             // 
-            this.txtBoxAlpha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxAlpha.Location = new System.Drawing.Point(900, 774);
-            this.txtBoxAlpha.Name = "txtBoxAlpha";
-            this.txtBoxAlpha.Size = new System.Drawing.Size(143, 30);
-            this.txtBoxAlpha.TabIndex = 24;
-            this.txtBoxAlpha.Text = "0";
+            this.txtBoxGamma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxGamma.Location = new System.Drawing.Point(800, 619);
+            this.txtBoxGamma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxGamma.Name = "txtBoxGamma";
+            this.txtBoxGamma.Size = new System.Drawing.Size(128, 26);
+            this.txtBoxGamma.TabIndex = 24;
+            this.txtBoxGamma.Text = "0";
             // 
             // btnInvert
             // 
             this.btnInvert.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInvert.ForeColor = System.Drawing.Color.Navy;
-            this.btnInvert.Location = new System.Drawing.Point(810, 406);
-            this.btnInvert.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnInvert.Location = new System.Drawing.Point(720, 325);
+            this.btnInvert.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInvert.Name = "btnInvert";
-            this.btnInvert.Size = new System.Drawing.Size(232, 66);
+            this.btnInvert.Size = new System.Drawing.Size(206, 53);
             this.btnInvert.TabIndex = 25;
             this.btnInvert.Text = "Invert";
             this.btnInvert.UseVisualStyleBackColor = true;
@@ -260,11 +263,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 911);
+            this.ClientSize = new System.Drawing.Size(1076, 729);
             this.Controls.Add(this.btnInvert);
-            this.Controls.Add(this.txtBoxAlpha);
+            this.Controls.Add(this.txtBoxGamma);
             this.Controls.Add(this.txtBoxCoef);
             this.Controls.Add(this.txtBoxThreshold);
             this.Controls.Add(this.btnGrayScale1);
@@ -281,7 +284,7 @@
             this.Controls.Add(this.btnBlackWhite);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnOrigin);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -309,7 +312,7 @@
         private System.Windows.Forms.Button btnGrayScale1;
         private System.Windows.Forms.TextBox txtBoxThreshold;
         private System.Windows.Forms.TextBox txtBoxCoef;
-        private System.Windows.Forms.TextBox txtBoxAlpha;
+        private System.Windows.Forms.TextBox txtBoxGamma;
         private System.Windows.Forms.Button btnInvert;
     }
 }

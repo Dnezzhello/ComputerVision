@@ -26,13 +26,15 @@ namespace lab_w2
             pictureBox1.Refresh();
         }
 
+        //C:\\Users\\spxph\\Documents\\nuol\\computer_vision\\ComputerVision\\lab_w2\\Resources\\corgi.jpg
         Bitmap pict_C;
-        Bitmap pict_O = (Bitmap) Image.FromFile("C:\\Users\\souphaxaynaovalath\\Documents\\computer vision\\lab_w2\\lab_w2\\Resources\\corgi.jpg");
+        Bitmap pict_O = (Bitmap) Image.FromFile("C:\\Users\\spxph\\Documents\\nuol\\computer_vision\\ComputerVision\\lab_w2\\lab_w2\\Resources\\corgi2.jpg");
         bool is_blackWhite;
 
         public Bitmap ConvertToGrayScale_1(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
+            is_blackWhite = false;
             for (int i = 0; i < bmp.Width; i++)
             {
                 for (int j=0; j < bmp.Height; j++)
@@ -48,6 +50,7 @@ namespace lab_w2
         public Bitmap ConvertToGrayScale_2(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
+            is_blackWhite = false;
             for (int i = 0; i < bmp.Width; i++)
             {
                 for (int j = 0; j < bmp.Height; j++)
@@ -92,6 +95,7 @@ namespace lab_w2
         public Bitmap Invert(Bitmap src)
         {
             Bitmap pict = new Bitmap(src.Width, src.Height);
+            
             if (!is_blackWhite)
             {
                 pict = Thresholding(src);
@@ -100,19 +104,20 @@ namespace lab_w2
             {
                 pict = src;
             }
-
+            
             for (int i=0;i<src.Width;i++)
             {
                 for (int j=0;j<src.Height ;j++)
                 {
                     Color c = pict.GetPixel(i, j);
-                    
-                    if (c.R == 255)
+                    int avg = (int)((c.R + c.G + c.B) / 3);
+
+                    if (avg == 255)
                     {
-                        pict.SetPixel(i, j, Color.FromArgb(0, 0,0));
+                        pict.SetPixel(i, j, Color.Black);
                     } else
                     {
-                        pict.SetPixel(i, j, Color.FromArgb(255, 255, 255));
+                        pict.SetPixel(i, j, Color.White);
                     }
                 }
             }
@@ -123,7 +128,7 @@ namespace lab_w2
         public Bitmap Negative(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
-            
+            is_blackWhite = false;
             for (int i= 0;i<src.Width; i++)
             {
                 for (int j=0;j<src.Height;j++)
@@ -139,6 +144,7 @@ namespace lab_w2
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
             int c = int.Parse(txtBoxCoef.Text.Trim());
+            is_blackWhite = false;
 
 
             for (int i=0; i<src.Width; i++)
@@ -152,6 +158,10 @@ namespace lab_w2
                     G = (int)(c * Math.Log(1 + color.G));
                     B = (int)(c * Math.Log(1 + color.B));
 
+                    R = Math.Max(0, Math.Min(255, R));
+                    G = Math.Max(0, Math.Min(255, R));
+                    B = Math.Max(0, Math.Min(255, R));
+
                     bmp.SetPixel(i, j, Color.FromArgb(R,G,B));
                 }
             }
@@ -163,7 +173,8 @@ namespace lab_w2
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
             int c = int.Parse(txtBoxCoef.Text.Trim());
-            double alpha = double.Parse(txtBoxAlpha.Text.Trim());
+            double gamma = double.Parse(txtBoxGamma.Text.Trim());
+            is_blackWhite = false;
 
             for (int i = 0; i < src.Width; i++)
             {
@@ -172,9 +183,13 @@ namespace lab_w2
                     Color color = src.GetPixel(i, j);
                     int R, G, B;
 
-                    R = (int)(c * Math.Pow(color.R, alpha));
-                    G = (int)(c * Math.Pow(color.G, alpha));
-                    B = (int)(c * Math.Pow(color.B, alpha));
+                    R = (int)(c * Math.Pow(color.R, gamma));
+                    G = (int)(c * Math.Pow(color.G, gamma));
+                    B = (int)(c * Math.Pow(color.B, gamma));
+
+                    R = Math.Max(0, Math.Min(255, R));
+                    G = Math.Max(0, Math.Min(255, R));
+                    B = Math.Max(0, Math.Min(255, R));
 
                     bmp.SetPixel(i, j, Color.FromArgb(R, G, B));
                 }

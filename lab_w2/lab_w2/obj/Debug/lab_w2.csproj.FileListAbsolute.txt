@@ -9,3 +9,14 @@ C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w2\lab_w2\obj\Debug\la
 C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w2\lab_w2\obj\Debug\lab_w2.csproj.CoreCompileInputs.cache
 C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w2\lab_w2\obj\Debug\lab_w2.exe
 C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w2\lab_w2\obj\Debug\lab_w2.pdb
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\bin\Debug\lab_w2.exe.config
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\bin\Debug\lab_w2.exe
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\bin\Debug\lab_w2.pdb
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\obj\Debug\lab_w2.csproj.AssemblyReference.cache
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\obj\Debug\lab_w2.csproj.SuggestedBindingRedirects.cache
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\obj\Debug\lab_w2.Form1.resources
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\obj\Debug\lab_w2.Properties.Resources.resources
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\obj\Debug\lab_w2.csproj.GenerateResource.cache
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\obj\Debug\lab_w2.csproj.CoreCompileInputs.cache
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\obj\Debug\lab_w2.exe
+C:\Users\spxph\Documents\nuol\computer_vision\ComputerVision\lab_w2\lab_w2\obj\Debug\lab_w2.pdb
