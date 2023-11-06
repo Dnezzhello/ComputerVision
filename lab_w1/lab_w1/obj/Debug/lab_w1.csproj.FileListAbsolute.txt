@@ -1,0 +1,11 @@
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\bin\Debug\lab_w1.exe.config
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\bin\Debug\lab_w1.exe
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\bin\Debug\lab_w1.pdb
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\obj\Debug\lab_w1.csproj.AssemblyReference.cache
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\obj\Debug\lab_w1.csproj.SuggestedBindingRedirects.cache
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\obj\Debug\lab_w1.Form1.resources
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\obj\Debug\lab_w1.Properties.Resources.resources
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\obj\Debug\lab_w1.csproj.GenerateResource.cache
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\obj\Debug\lab_w1.csproj.CoreCompileInputs.cache
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\obj\Debug\lab_w1.exe
+C:\Users\souphaxaynaovalath\Documents\computer vision\lab_w1\lab_w1\obj\Debug\lab_w1.pdb
