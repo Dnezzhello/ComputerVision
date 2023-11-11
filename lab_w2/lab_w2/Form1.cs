@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,15 +28,15 @@ namespace lab_w2
             pictureBox1.Refresh();
         }
 
-        //C:\\Users\\spxph\\Documents\\nuol\\computer_vision\\ComputerVision\\lab_w2\\Resources\\corgi.jpg
         Bitmap pict_C;
         Bitmap pict_O = (Bitmap) Image.FromFile("C:\\Users\\spxph\\Documents\\nuol\\computer_vision\\ComputerVision\\lab_w2\\lab_w2\\Resources\\corgi2.jpg");
         bool is_blackWhite;
 
+        //Gray Scale 1
         public Bitmap ConvertToGrayScale_1(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
-            is_blackWhite = false;
+
             for (int i = 0; i < bmp.Width; i++)
             {
                 for (int j=0; j < bmp.Height; j++)
@@ -47,10 +49,11 @@ namespace lab_w2
             return bmp;
         }
 
+        //Gray Scale 2
         public Bitmap ConvertToGrayScale_2(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
-            is_blackWhite = false;
+
             for (int i = 0; i < bmp.Width; i++)
             {
                 for (int j = 0; j < bmp.Height; j++)
@@ -64,11 +67,17 @@ namespace lab_w2
             return bmp;
         }
 
+        // Black and White
         public Bitmap Thresholding(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
             int t = int.Parse(txtBoxThreshold.Text.Trim());
-            is_blackWhite = true;
+
+            if (t < 0 || t > 255)
+            {
+                MessageBox.Show("Threshold value should be between 0 and 255");
+                return src;
+            }
 
             for (int i=0;i<src.Width;i++)
             {
@@ -89,9 +98,12 @@ namespace lab_w2
                 }
             }
 
+            is_blackWhite = true;
+
             return bmp;
         }
 
+        // Invert
         public Bitmap Invert(Bitmap src)
         {
             Bitmap pict = new Bitmap(src.Width, src.Height);
@@ -125,10 +137,11 @@ namespace lab_w2
             
         }
 
+        // Negative
         public Bitmap Negative(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
-            is_blackWhite = false;
+
             for (int i= 0;i<src.Width; i++)
             {
                 for (int j=0;j<src.Height;j++)
@@ -140,11 +153,11 @@ namespace lab_w2
             return bmp;
         }
 
+        // Log Transformation
         public Bitmap LogTransformation(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
-            int c = int.Parse(txtBoxCoef.Text.Trim());
-            is_blackWhite = false;
+            double c = double.Parse(txtBoxCoef.Text.Trim());
 
 
             for (int i=0; i<src.Width; i++)
@@ -169,12 +182,12 @@ namespace lab_w2
             return bmp;
         }
 
+        // Power Law Transformation
         public Bitmap PowerLawTransformation(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
-            int c = int.Parse(txtBoxCoef.Text.Trim());
+            double c = double.Parse(txtBoxCoef.Text.Trim());
             double gamma = double.Parse(txtBoxGamma.Text.Trim());
-            is_blackWhite = false;
 
             for (int i = 0; i < src.Width; i++)
             {
@@ -217,6 +230,7 @@ namespace lab_w2
         private void btnOrigin_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = pict_O;
+            is_blackWhite = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -229,7 +243,6 @@ namespace lab_w2
         {
             Bitmap pict_C = new Bitmap(pictureBox1.Image);
             pictureBox1.Image = Thresholding(pict_C);
-           // MessageBox.Show(txtBoxThreshold.Text);
         }
 
         private void btnInvert_Click(object sender, EventArgs e)

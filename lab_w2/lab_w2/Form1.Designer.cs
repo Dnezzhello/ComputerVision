@@ -241,10 +241,10 @@
             // txtBoxGamma
             // 
             this.txtBoxGamma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxGamma.Location = new System.Drawing.Point(800, 619);
+            this.txtBoxGamma.Location = new System.Drawing.Point(814, 619);
             this.txtBoxGamma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxGamma.Name = "txtBoxGamma";
-            this.txtBoxGamma.Size = new System.Drawing.Size(128, 26);
+            this.txtBoxGamma.Size = new System.Drawing.Size(114, 26);
             this.txtBoxGamma.TabIndex = 24;
             this.txtBoxGamma.Text = "0";
             // 

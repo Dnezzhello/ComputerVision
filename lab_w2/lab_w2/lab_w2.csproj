@@ -82,6 +82,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\corgi.jpg" />
+    <Content Include="Resources\corgi2.jpg" />
     <Content Include="Resources\dog.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
