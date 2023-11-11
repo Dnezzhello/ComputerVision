@@ -157,7 +157,7 @@ namespace lab_w2
         public Bitmap LogTransformation(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
-            double c = double.Parse(txtBoxCoef.Text.Trim());
+            double c = double.Parse(txtBoxCoef1.Text.Trim());
 
 
             for (int i=0; i<src.Width; i++)
@@ -186,7 +186,7 @@ namespace lab_w2
         public Bitmap PowerLawTransformation(Bitmap src)
         {
             Bitmap bmp = new Bitmap(src.Width, src.Height);
-            double c = double.Parse(txtBoxCoef.Text.Trim());
+            double c = double.Parse(txtBoxCoef2.Text.Trim());
             double gamma = double.Parse(txtBoxGamma.Text.Trim());
 
             for (int i = 0; i < src.Width; i++)
@@ -196,9 +196,9 @@ namespace lab_w2
                     Color color = src.GetPixel(i, j);
                     int R, G, B;
 
-                    R = (int)(c * Math.Pow(color.R, gamma));
-                    G = (int)(c * Math.Pow(color.G, gamma));
-                    B = (int)(c * Math.Pow(color.B, gamma));
+                    R = (int)(c * Math.Pow(color.R / 255.0, gamma));
+                    G = (int)(c * Math.Pow(color.G / 255.0, gamma));
+                    B = (int)(c * Math.Pow(color.B / 255.0, gamma));
 
                     R = Math.Max(0, Math.Min(255, R));
                     G = Math.Max(0, Math.Min(255, R));

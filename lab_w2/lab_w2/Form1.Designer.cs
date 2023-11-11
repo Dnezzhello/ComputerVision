@@ -43,9 +43,11 @@
             this.btnOpenPic = new System.Windows.Forms.Button();
             this.btnGrayScale1 = new System.Windows.Forms.Button();
             this.txtBoxThreshold = new System.Windows.Forms.TextBox();
-            this.txtBoxCoef = new System.Windows.Forms.TextBox();
+            this.txtBoxCoef2 = new System.Windows.Forms.TextBox();
             this.txtBoxGamma = new System.Windows.Forms.TextBox();
             this.btnInvert = new System.Windows.Forms.Button();
+            this.txtBoxCoef1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,7 +120,7 @@
             // 
             this.btnPowerLaw.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPowerLaw.ForeColor = System.Drawing.Color.Navy;
-            this.btnPowerLaw.Location = new System.Drawing.Point(724, 487);
+            this.btnPowerLaw.Location = new System.Drawing.Point(724, 524);
             this.btnPowerLaw.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPowerLaw.Name = "btnPowerLaw";
             this.btnPowerLaw.Size = new System.Drawing.Size(201, 53);
@@ -176,7 +178,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(720, 564);
+            this.label3.Location = new System.Drawing.Point(720, 601);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 24);
             this.label3.TabIndex = 16;
@@ -186,7 +188,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(720, 619);
+            this.label4.Location = new System.Drawing.Point(720, 656);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 24);
             this.label4.TabIndex = 18;
@@ -228,20 +230,20 @@
             this.txtBoxThreshold.TabIndex = 22;
             this.txtBoxThreshold.Text = "0";
             // 
-            // txtBoxCoef
+            // txtBoxCoef2
             // 
-            this.txtBoxCoef.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxCoef.Location = new System.Drawing.Point(768, 564);
-            this.txtBoxCoef.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtBoxCoef.Name = "txtBoxCoef";
-            this.txtBoxCoef.Size = new System.Drawing.Size(159, 26);
-            this.txtBoxCoef.TabIndex = 23;
-            this.txtBoxCoef.Text = "0";
+            this.txtBoxCoef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxCoef2.Location = new System.Drawing.Point(768, 601);
+            this.txtBoxCoef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxCoef2.Name = "txtBoxCoef2";
+            this.txtBoxCoef2.Size = new System.Drawing.Size(159, 26);
+            this.txtBoxCoef2.TabIndex = 23;
+            this.txtBoxCoef2.Text = "0";
             // 
             // txtBoxGamma
             // 
             this.txtBoxGamma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxGamma.Location = new System.Drawing.Point(814, 619);
+            this.txtBoxGamma.Location = new System.Drawing.Point(814, 656);
             this.txtBoxGamma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxGamma.Name = "txtBoxGamma";
             this.txtBoxGamma.Size = new System.Drawing.Size(114, 26);
@@ -261,14 +263,36 @@
             this.btnInvert.UseVisualStyleBackColor = true;
             this.btnInvert.Click += new System.EventHandler(this.btnInvert_Click);
             // 
+            // txtBoxCoef1
+            // 
+            this.txtBoxCoef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxCoef1.Location = new System.Drawing.Point(764, 482);
+            this.txtBoxCoef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxCoef1.Name = "txtBoxCoef1";
+            this.txtBoxCoef1.Size = new System.Drawing.Size(159, 26);
+            this.txtBoxCoef1.TabIndex = 27;
+            this.txtBoxCoef1.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(716, 482);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 24);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "C = ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 729);
+            this.Controls.Add(this.txtBoxCoef1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnInvert);
             this.Controls.Add(this.txtBoxGamma);
-            this.Controls.Add(this.txtBoxCoef);
+            this.Controls.Add(this.txtBoxCoef2);
             this.Controls.Add(this.txtBoxThreshold);
             this.Controls.Add(this.btnGrayScale1);
             this.Controls.Add(this.btnOpenPic);
@@ -311,9 +335,11 @@
         private System.Windows.Forms.Button btnOpenPic;
         private System.Windows.Forms.Button btnGrayScale1;
         private System.Windows.Forms.TextBox txtBoxThreshold;
-        private System.Windows.Forms.TextBox txtBoxCoef;
+        private System.Windows.Forms.TextBox txtBoxCoef2;
         private System.Windows.Forms.TextBox txtBoxGamma;
         private System.Windows.Forms.Button btnInvert;
+        private System.Windows.Forms.TextBox txtBoxCoef1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
